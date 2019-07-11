@@ -8,10 +8,10 @@ export default function(){
         loop: true,
         slidesPerView: 3,
 
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
         
         pagination: {
             el: '.swiper-pagination',
