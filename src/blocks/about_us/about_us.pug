@@ -1,0 +1,40 @@
+mixin about_us()
+    .about&attributes(attributes)
+        .container
+            h2.about_h2 Как мы работаем
+            .about_do
+                each i in abuot
+                    .about_elem
+                        .about_grid
+                            .about_icon
+                                .about_icon__elem
+                                    i.about_icons(class=i.icon)
+                                    span.about_span=i.span
+                                    .about_trigon
+                            .about_text
+                                p.about_p=i.p
+                .about_elem
+        .about_back
+            .container
+                .about_blog
+                    each i in aboutBlog
+                        .about_page(class='grid')
+                            .about_emeg
+                                img.about_img(src=i.img alt="")
+                            .about_recall
+                                .about_personal
+                                    .about_foto
+                                        .about_avatar
+                                            img(src=i.soc, alt="")
+                                        .about_name
+                                            h3.about_h3=i.name
+                                            p.about_compani=i.secondName
+                                h4.about_h4=i.h4
+                                p.about_p=i.p
+                                .abouc_soc-lincl
+                                    a.about_a(href="#")
+                                        i.about_soc__icons(class=i.aSoc)
+            .about_back__trigol
+            .about_back__box
+                h2.about_h2 О нас пишут в соцсетях
+

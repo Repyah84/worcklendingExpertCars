@@ -1,0 +1,35 @@
+mixin header()
+    .header&attributes(attributes)
+        .header_submit
+            .container
+                .header_wraper(class='grid')
+                    .header_text
+                        h1.header_h1 Хотите купить авто по выгодной цене?
+                        h3.header_h3 Команда експертов подберет и доставит авто из США под Ваш запрос!
+                    .header_elem
+                        form.header_form(action="#" name='header_form')        
+                            each i in ['Ваше имя', 'Номер телефона', 'Бюджет, $США']
+                                label.header_lable(for="")=i
+                                +input('header_input')(type='text' name='header_form')
+                            .header_box
+                                .header_check
+                                    +input('header_checkbox')(type='checkbox' id='header_checkbox' name='header_form')
+                                    label.header_lable(class='header_lable__check' for="header_checkbox") Покупка в кредит
+                                a.header_a(href="#") Условия кредитования
+                            +button('header_button', 'Перезвоните мне')(name='header_form')
+        .header_comp
+            .container
+                .header_wraper(class='grid')
+                    .header_word
+                        .header_comp__box
+                            h2.header_h2 Почему стоит покупать авто у нас
+                            .header_wraper__p
+                                p.header_p=header_p_text
+                        .header_back
+                            .header_back__box
+                                .header_back__trigon
+                    .header_Ytoo
+                        .header_wraper__player(id='youtube-player')
+
+
+- var header_p_text = 'Если вы ищите надежный автомобиль в хорошем состоянии, тогда оптимальным решением станут автомобили из США от компании Cars Expert. Мы работаем в сфере авто бизнеса с 2008 года, обеспечивая полный комплекс услуг. Наши специалисты готовы привезти автомобиль «под ключ», включая: помощь в выборе и покупки автомобиля на аукционе Америки, помощь с официальным оформлением автомобиля и сертификацией авто, при необходимости помогаем провести ремонт транспортного средства. Кроме этого, у нас всегда есть в наличие автомобили, пригнанные из Америки, которые приятно удивят своей ценой.'                  

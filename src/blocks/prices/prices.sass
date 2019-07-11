@@ -1,0 +1,175 @@
+.prices
+    background: $color-text
+    &_box
+        padding: 39px 15px 44px 15px
+        text-align: center
+        background: $color-faer
+        @media (max-width: $md)
+            text-align: left
+            padding: 10px 15px 10px 15px
+    &_slider
+        padding: 93px 0 0 0
+        @media (max-width: $md)
+            padding: 35px 0 0 0 
+    &_cont
+        background: $color-lite
+        text-align: center
+        padding: 40px 0 62px 0
+    &_carts
+        padding: 0 0 100px 0
+    &_wraper
+        margin-top: 10px
+        background: $color-sprait
+        max-width: 370px
+        display: flex
+        flex-direction: column
+        &__text
+            text-align: left
+            max-width: 370px
+            width: 100%
+    &_img
+        max-width: 370px
+        position: relative
+    &_sel
+        position: absolute
+        right: 0
+        bottom: -25px      
+    &_contact
+        grid-area: 1 / 1 / 2 / 6
+        position: relative
+        z-index: 5
+    &_back  
+        grid-area: 1 / 7 / 2 / 13
+        background: url(../img/Ford-Mustang-PNG-Photo.png) center no-repeat
+    &_table
+        margin-top: 25px
+    &_td__old
+        color: #535252
+        font-family: $Roboto
+        font-weight: 700
+        font-size: 16px
+    &_td__new
+        color: $color_minith
+        font-family: $Roboto
+        font-weight: 700
+        font-size: 20px
+    &_td__text
+        color: $color_minith
+        font-family: $Roboto
+        font-weight: 400
+        font-size: 20px
+    &_button
+        padding: 17px 0px
+        max-width: 138px
+        margin-top: 33px
+        color: $color-text
+        font-family: $Roboto
+        font-weight: 700
+        font-size: 22px
+        background: $color-secondary
+        transition: 0.2s
+        &:hover
+            background: $color-praymay
+    &_h2
+        color: $color-text
+        font-family: $Roboto
+        font-weight: 700
+        font-size: 48px
+        @media (max-width: $md)
+            font-size: 32px
+    &_h3
+        color: $color_minith
+        font-family: $Roboto
+        font-weight: 700
+        font-size: 24px
+    &_p
+        margin-top: 34px
+        color: $color_minith
+        font-family: $Roboto
+        font-weight: 700
+        font-size: 20px
+        @media (max-width: $md)
+            font-size: 28px
+    &_box__p
+        margin-top: 30px
+        color: $color-text
+        font-family: $Roboto
+        font-weight: 400
+        font-size: 28px
+        @media (max-width: $sm)
+            margin-top: 10px
+            font-size: 20px
+    &_questions__h2
+        color: $color-praymay
+        font-family: $Roboto
+        font-weight: 700
+        font-size: 36px
+        @media (max-width: $md)
+            text-align: left
+            font-size: 28px
+    &_form
+        text-align: left
+        margin-top: 27px
+        display: grid
+        padding-right: 20px
+        @media (max-width: $sm)
+            padding: 0
+        &__button
+            margin-top: 35px
+            color: $color-text
+            font-family: $Roboto
+            font-weight: 400
+            font-size: 22px
+            background: $color-faer
+            padding: 17px 0
+            transition: 0.2s
+            &:hover
+                background: #8B0000
+    &_lable
+        margin-top: 16px
+        color: $color_minith
+        font-family: $Roboto
+        font-weight: 400
+        font-size: 18px
+    &_input
+        margin-top: 8px
+        color: $color_minith
+        font-family: $Roboto
+        font-weight: 400
+        font-size: 18px
+        background: #DBDBDB
+        padding: 20px 5px
+    & .swiper-container
+        width: 100%
+        height: 100%
+    & .swiper-slide
+        display: flex
+        flex-direction: column
+        align-items: center
+    & .swiper-pagination-bullet
+        border-radius: 0
+        width: 20px
+        height: 20px
+        font-size: 0
+        color:#000
+        opacity: 1
+        background: $color-sprait
+        transform: skewX(-18deg)
+    & .swiper-pagination-bullet-active 
+        color:#fff
+        background: $color-praymay
+@media (max-width: $xl)
+    .prices
+        &_questions__h2
+            text-align: left
+        &_contact
+            max-width: 467px
+            grid-area: 1 / 1 / 2 / 12
+        &_back  
+            grid-area: 1 / 2 / 2 / 13
+            background: url(../img/Ford-Mustang-PNG-Photo.png) right no-repeat
+            @media (max-width: $md)
+                background: url(../img/Ford-Mustang-PNG-Photo.png) left no-repeat
+                background-size: cover
+
+

@@ -1,0 +1,43 @@
+.footer
+    &_back__soc
+        background: $color-praymay
+        padding: 29px 0
+    &_back__right
+        background: #2A2A2A
+        text-align: center
+        padding: 27px
+    &_soc
+        display: flex
+        max-width: 200px
+        margin: auto
+        justify-content: space-between    
+        &__box
+            width: 42px
+            height: 42px
+            display: flex
+            border: 1px solid $color-text
+            align-items: center
+            justify-content: center
+            background: $color-text
+            text-decoration: none
+            transition: 0.2s
+            &:nth-child(1):hover
+                background: #414f91
+                & .fab,.fas
+                    color: $color-text
+            &:nth-child(2):hover
+                background: #4070a4
+                & .fab,.fas
+                    color: $color-text
+            &:nth-child(3):hover
+                background: #dd2b22
+                & .fab,.fas
+                    color: $color-text
+    &_icon
+        font-size: 28px
+        color: $color-praymay
+    &_p
+        color: $color-text
+        font-family: $Roboto
+        font-weight: 400
+        font-size: 16px

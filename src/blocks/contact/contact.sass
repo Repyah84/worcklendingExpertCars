@@ -1,0 +1,70 @@
+.contact
+    height: 528px
+    position: relative
+    &_elem
+        position: relative
+    &_back
+        position: absolute
+        top: 0
+        padding-right: 70px
+        left: -1500px
+        height: 295px
+        width: 2000px
+        overflow: hidden
+        &__elem
+            height: 100%
+            background: $color-praymay
+            position: relative
+        &__trigel
+            width: 70px
+            height: 350px
+            position: absolute
+            top: 0
+            right: -70px
+            background: #F08080
+            transform-origin: top right
+            transform: rotate(10deg)
+            background: inherit 
+    &_box
+        position: relative
+        z-index: 5
+        display: grid
+        & .fas,.far
+            margin-right: 10px
+    &_text
+        margin-top: 10px
+        color: $color-text
+        font-family: $Roboto
+        font-weight: 400
+        font-size: 16px
+        display: flex
+        align-items: center     
+    &_map
+        position: absolute
+        top: 52px
+        left: 0
+        height: 478px
+        width: 100%
+    &_h2
+        margin: 35px 0 25px 0
+        color: $color-text
+        font-family: $Roboto
+        font-weight: 700
+        font-size: 32px
+    &_a
+        color: $color-text
+        font-family: $Roboto
+        font-weight: 400
+        font-size: 16px
+        text-decoration: none
+        @media (max-width: $sm)
+            font-size: 12px
+@media (max-width: $md)
+    .contact
+        &_h2
+            margin: 15px 0 15px 0
+            font-size: 28px
+        &_text
+            font-size: 14px
+        &_back
+            height: 220px      

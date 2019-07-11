@@ -1,0 +1,57 @@
+.cols
+    // display: none
+    // @media (max-width: $lg)
+    position: fixed
+    z-index: 100
+    display: flex
+    right: 5px
+    bottom: 97px
+    width: 50px
+    height: 50px
+    border: 1px solid #FFFFFF
+    &_blender
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        width: 50px
+        height: 50px
+        background: $color-praymay
+    &_elems
+        padding-bottom: 10px
+        position: absolute
+        width: 100%
+        height: 160px
+        top: -170px
+        left: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        transition: 0.2s
+        transform: scaley(0)
+        transform-origin: center bottom
+    &_elem
+        opacity: 0.1
+        transform: scaley(0)
+        transition:  0.4s
+        &:nth-child(1) .cols_a
+            border: 2px solid #f8d306
+        &:nth-child(2) .cols_a
+            border: 2px solid #f60000
+        &:nth-child(3) .cols_a
+            border: 2px solid #01a2fb  
+    &_a
+        display: flex
+        padding: 4px
+        width: 34px
+        height: 34px
+        background: $color-sprait 
+    &_imeg
+        object-fit: cover
+        width: 100%
+        height: 100%      
+    &_i
+        font-size: 30px
+        color: $color-sprait    

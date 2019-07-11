@@ -1,0 +1,37 @@
+mixin prices()
+    .prices&attributes(attributes)
+        .prices_box
+            h2.prices_h2 Акционное предложение !
+            p.prices_box__p При заказе до 01.06.2019 Вы получите супер цену
+        .container
+            .prices_slider(class='swiper-container')
+                .prices_carts(class='swiper-wrapper')
+                    each i in prices_carts
+                        .prices_cart(class='swiper-slide')
+                            .prices_wraper__text
+                                    h3.prices_h3=i.h3
+                            .prices_wraper
+                                .prices_img
+                                    img(src=i.img, alt="")
+                                    +sel('prices_sel', i.sel)
+                                p.prices_p=i.p
+                                table.prices_table
+                                    tr
+                                        td.prices_td__old Старая цена
+                                        td.prices_td__new Новая цена
+                                    tr
+                                        td.prices_td__old!=i.oldPrais
+                                        td.prices_td__text=i.newPrais
+                                +button('prices_button', 'Купить')
+                .swiper-pagination                
+        .prices_cont
+            .container
+                h2.prices_questions__h2 Остались вопросы ? Мы ответим на них
+                .prices_questions(class='grid')
+                    .prices_contact
+                        form.prices_form(action="" name='prices_form')
+                            each i in ['Имя', 'Телефон']
+                                label.prices_lable(for="input_tex")=i
+                                +input('prices_input')(type='text' name='prices_form' id='input_text')
+                            +button('prices_form__button', 'Перезвоните мне')
+                    .prices_back

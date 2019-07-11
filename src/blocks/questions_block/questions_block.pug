@@ -1,0 +1,12 @@
+mixin questions_block(titel, mass)
+    .questions_block
+        .questions_block__text
+            h3.questions_block__h3=titel
+            +button('questions_block__button')
+                .questions_block__elem
+                .questions_block__elem
+        .questions_block__desh
+            .questions_block__wraper
+                ol.questions_block__ol
+                    each i in mass
+                        li.questions_block__li=i

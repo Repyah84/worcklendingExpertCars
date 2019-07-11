@@ -1,0 +1,9 @@
+mixin questions()
+    .questions&attributes(attributes)
+        .container
+            h2.questions_h2 Часто задаваемые вопросы
+            .questions_box
+                +questions_block('Почему автомобили в США можно купить дешевле на 30-40%, чем в Украине?', advantage)
+                +questions_block('Какие гарантии безопасности при покупке авто с аукциона?', advantage)
+                +questions_block('Почему это выгодно?', advantage)
+                +questions_block('Какие преимущества автомобиля перед нашим рынком?', advantage)

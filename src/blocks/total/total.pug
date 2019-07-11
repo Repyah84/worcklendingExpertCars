@@ -1,0 +1,20 @@
+mixin total()
+    .total&attributes(attributes)
+        .total_soc
+            .container
+                .total_soc__linck(class='grid')
+                    .total_elem
+                        h2.total_h2 Акции, скидки подписывайтесь
+                    .total_elem
+                        .total_mail
+                            +input('total_input')(type='text' placeholder='Email')
+                            +button('total_button', 'ПОДПИСАТЬСЯ')
+                    .total_elem
+                        each i in ['fab fa-facebook-f','fab fa-instagram','fas fa-paper-plane','fab fa-youtube']
+                            a.total_soc__box(href="#")
+                                i.total_icon(class=i)   
+        .total_back
+            .container
+                h2.total_back__h2 Что в итоге?
+                p.total_back__p=p_text
+-var p_text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet est quis auctor lobortis. Morbi ultrices auctor diam, eget aliquet dui ultrices vitae. Suspendisse tincidunt at sapien ac vehicula. Duis sed augue convallis, semper risus at, mattis orci. Etiam eu aliquet velit. Etiam pulvinar, tellus id pretium vehicula, leo eros egestas justo, quis fringilla massa quam ac risus. Integer ultricies lacus egestas vestibulum hendrerit';

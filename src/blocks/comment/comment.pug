@@ -1,0 +1,15 @@
+mixin comment()
+    .comment&attributes(attributes)
+        h2.comment_h2 Отзывы
+        .container
+            .comment_box(class='swiper-container')
+                .comment_wraper(class='swiper-wrapper')
+                    each i in commentElem
+                        .comment_wraper__elem(class='swiper-slide')
+                            .comment_box__elem
+                                .comment_elem
+                                    .comment_imeg      
+                                        img(src=i.img, alt="")
+                                    .comment_imeg      
+                                        img(src=i.bamp, alt="")
+                .swiper-pagination                 

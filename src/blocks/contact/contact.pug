@@ -1,0 +1,17 @@
+mixin contact()
+    .contact&attributes(attributes)
+        .contact_map(id='map')
+        .container
+            .contact_elem
+                .contact_box
+                    h2.contact_h2 Контакты
+                    each i in obgcont
+                        .contact_text 
+                            i.contact_icon(class=i.icon)
+                            if i.text
+                                a.contact_a(href="#")=i.text
+                            else
+                                span.contact_span=i.phone
+                .contact_back
+                    .contact_back__elem
+                        .contact_back__trigel

@@ -1,0 +1,27 @@
+include ./pug/main.pug
+include ./pug/variables.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet")
+        script(src="https://kit.fontawesome.com/dae7332d42.js")
+        link(rel="stylesheet", href="./css/style.css")
+    body
+        +logo()
+        +header()(class='max-width')
+        +about_us()(class='max-width')
+        +prices()(class='max-width')
+        +advantage()(class='max-width')
+        +comment()(class='max-width')
+        +total()(class='max-width')
+        +questions()(class='max-width')
+        +contact()(class='max-width')
+        +footer()(class='max-width')
+        +cols()
+        script(async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQDEK_bp8E3TJz1Sg1VMqF7jn8J3Z7Haw")
+        script(src='./js/scrypt.js')

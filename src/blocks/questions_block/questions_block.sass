@@ -1,0 +1,53 @@
+.questions_block
+    margin-top: 16px
+    background: $color-praymay
+    &__text
+        cursor: pointer
+        text-align: left
+        padding: 16px 36px
+        background: $color-praymay
+        display: flex
+        justify-content: space-between
+        @media (max-width: $md)
+            padding: 16px 8px
+        @media (max-width: $sm)
+            padding: 10px 8px
+    &__h3
+        color: $color-text
+        font-family: $Roboto
+        font-weight: 400
+        font-size: 24px
+        @media (max-width: $md)
+            font-size: 20px
+        @media (max-width: $sm)
+            font-size: 17px
+    &__wraper
+        background: $color-secondary
+        position: relative
+        height: 0px
+        overflow: hidden
+        transition: height 0.3s
+    &__ol
+        padding: 16px 36px 38px 56px
+        position: absolute
+        text-align: left
+        transition: top 0.3s
+        top: -100%
+    &__li
+        color: $color-text
+        font-family: $Roboto
+        font-weight: 400
+        font-size: 18px
+        line-height: 30px
+    &__button
+        background: inherit
+        box-shadow: none
+    &__elem
+        background: $color-text
+        height: 5px
+        width: 26px
+        border-radius: 2px 2px 2px 2px
+        &:nth-child(1)
+            transform: rotate(90deg)
+            position: absolute
+            transition: transform 0.1s

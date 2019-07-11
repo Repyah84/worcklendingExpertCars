@@ -1,0 +1,24 @@
+mixin logo()
+    .logo_paduha
+        .logo&attributes(attributes)
+            .logo_wraper(class='logo_wraper-ferst')
+                .logo_elem(class='logo_elem-ferst')
+                    .logo_adres
+                        i.logo_icon(class='fas fa-map-marker-alt')
+                        a.logo_a__adres(href="#").logo_p г.Киев, Голосеевский район, ул.Практичная 1, оф. 65
+                    .logo_box
+                        .logo_namber
+                            i.logo_icon(class='fas fa-phone')
+                            each x in ['066 000 00 02', '098 000 00 02', '073 000 00 02']
+                                a.logo_a__namber(href="#")=x
+                            .logo_trigon
+            .logo_wraper(class='logo_wraper-second')                              
+                .logo_elem(class='logo_elem-second')
+                    .logo_imeg
+                    .logo_nav
+                        each i in ['Гллавнвя', 'О нас', 'Как мы работаем', 'Наши цены', 'Контакты']
+                            a.logo_a__nav(href="#")=i
+                    +burger()
+                    .logo_burger__nav
+                        each i in ['Гллавнвя', 'О нас', 'Как мы работаем', 'Наши цены', 'Контакты']
+                            a.logo_a__nav(href="#")=i

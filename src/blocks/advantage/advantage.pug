@@ -1,0 +1,19 @@
+mixin advantage()
+    .advantage&attributes(attributes)
+        .container
+            h2.advantage_h2 Наши преимущества
+            .advantage_our(class='grid')
+                each i in advantage_our
+                    .advantage_elem
+                        .advantage_back
+                            .advantage_box
+                                .advantage_trigel
+                        .advantage_wraper
+                            h3.advantage_h3=i.h3
+                            .advantage_wraper__p
+                                p.advantage_p!=i.p
+                            if i.a
+                               .advantage_wraper__linck 
+                                    a.advantage_a(href="#")=i.a
+                .advantage_elem
+                    .advantage_elem__img

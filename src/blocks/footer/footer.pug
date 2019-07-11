@@ -1,0 +1,11 @@
+mixin footer()
+    .footer&attributes(attributes)
+        .footer_back__soc
+            .container
+                .footer_wraper
+                    .footer_soc
+                         each i in ['fab fa-facebook-f','fab fa-instagram','fab fa-youtube']
+                            a.footer_soc__box(href="#")
+                                i.footer_icon(class=i)
+        .footer_back__right
+            p.footer_p 2018 ©Сar Expert. Все права защищены.

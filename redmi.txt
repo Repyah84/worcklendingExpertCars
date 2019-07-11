@@ -1,0 +1,3 @@
+browserSync - gulp watch
+gulp build
+gulp dev

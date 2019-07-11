@@ -1,0 +1,123 @@
+.logo
+    max-width: 1920px
+    width: 100%
+    margin: auto
+    &_paduha
+        position: fixed
+        width: 100%
+        z-index: 50
+    &_icon
+        position: relative
+        z-index: 5
+        color: $color-text
+    &_wraper
+        width: 100%
+        &-ferst
+            background: $color-secondary
+        &-second
+            background: $color-sprait
+    &_elem
+        max-width: 1170px
+        padding: 0 15px
+        margin: auto
+        display: flex
+        align-items: center
+        &-ferst
+            position: relative
+        &-second
+            transition: 0.3s
+            justify-content: space-between
+    &_imeg
+        width: 100%
+        max-width: 352px
+        height: 111px
+        background: url(../img/Logo.png) left no-repeat
+        background-size: cover
+        @media (max-width: 1155px)
+            max-width: 192px 
+        @media (max-width: $lg)
+            height: 52px
+            max-width: 232px          
+    &_nav
+        display: flex
+        @media (max-width: $lg)
+            display: none
+    &_burger__nav
+        display: none
+        @media (max-width: $lg)
+            position: absolute
+            bottom: -295px
+            right: 0
+            border-top: 15px solid $color-secondary
+            border-bottom: 5px solid $color-secondary
+            background: $color-sprait
+            z-index: 10
+            display: block
+            transform: translateX(100%)
+            transition: transform 0.3s   
+    &_adres
+        padding: 21px 0
+        display: flex
+        align-items: center
+        transition: 0.3s
+        @media (max-width: $lg)
+            padding: 10px 0
+    &_p
+        font-family: $Roboto
+        color: $color-text
+        font-weight: 400
+        font-size: 16px
+        @media (max-width: $sm)
+            font-size: 12px         
+    &_namber
+        position: relative
+        display: flex
+        align-items: center
+        padding: 26px 0 26px 36px
+        margin-left: 25px
+        background: $color-praymay
+        transition: 0.3s
+    &_trigon
+        position: absolute
+        background: inherit
+        z-index: 0
+        top: 0
+        height: 80px
+        width: 25px
+        left: 0
+        transform-origin: left top
+        transform: rotate(19deg)
+    &_box
+        position: absolute
+        top: 0
+        width: 2000px
+        right: -1554px
+        overflow: hidden
+        transition: 0.3s
+        @media (max-width: $lg)
+            transform: translatex(100%)
+    &_a__adres
+        text-decoration: none
+        margin-left: 5px    
+    &_a__namber
+        color: $color-text
+        font-family: $Roboto
+        font-weight: 400
+        font-size: 16px
+        position: relative
+        z-index: 5
+        text-decoration: none
+        margin: 0 12px 0 8px
+    &_a__nav
+        color: $color_nith
+        font-family: $Roboto
+        font-weight: 400
+        font-size: 20px
+        text-decoration: none
+        display: block
+        padding: 16px 25px
+        cursor: pointer
+        &:hover
+            background: $color-faer
+            transition: background 0.3s
+            color: $color-text

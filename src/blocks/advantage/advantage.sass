@@ -1,0 +1,254 @@
+.advantage
+    padding: 116px 0 0 0
+    text-align: center
+    &_our
+        margin-top: 60px
+    &_wraper
+        position: relative
+        z-index: 5
+    &_elem
+        padding: 15px 0 104px 0    
+    &_elem:nth-child(1)
+        grid-area: 1 / 1 / 2 / 4
+        position: relative
+        text-align: left
+        & .advantage_back
+            padding-right: 75px
+            position: absolute
+            top: 0
+            width: 1000px
+            height: 80px
+            left: -753px
+        & .advantage_trigel
+            position: absolute
+            background: inherit
+            height: 115px
+            width: 75px
+            top: 0
+            right: -75px
+            transform-origin: top right
+            transform: rotate(43deg)
+    &_elem:nth-child(2)
+        grid-area: 1 / 10 / 2 / 13
+        text-align: right
+        position: relative
+        & .advantage_back
+            padding-left: 75px
+            position: absolute
+            top: 0
+            width: 1000px
+            height: 80px
+            right: -753px
+        & .advantage_trigel
+            position: absolute
+            background: inherit
+            height: 115px
+            width: 75px
+            top: 0
+            left:  -75px
+            transform-origin: top left 
+            transform: rotate(-43deg)   
+    &_elem:nth-child(3)
+        grid-area: 2 / 1 / 3 / 4
+        position: relative
+        text-align: left
+        & .advantage_back
+            padding-right: 75px
+            position: absolute
+            top: 0
+            width: 1000px
+            height: 80px
+            left: -753px
+        & .advantage_trigel
+            position: absolute
+            background: inherit
+            height: 115px
+            width: 75px
+            bottom: 0
+            right: -75px
+            transform-origin: bottom right
+            transform: rotate(-43deg)     
+    &_elem:nth-child(4)
+        grid-area: 2 / 10 / 3 / 13
+        position: relative
+        text-align: right
+        & .advantage_back
+            padding-left: 75px
+            position: absolute
+            top: 0
+            width: 1000px
+            height: 80px
+            right: -753px
+        & .advantage_trigel
+            position: absolute
+            background: inherit
+            height: 115px
+            width: 75px
+            bottom: 0
+            left:  -75px
+            transform-origin: bottom left 
+            transform: rotate(43deg)    
+    &_elem:nth-child(5)
+        grid-area: 1 / 3 / 3 / 11
+        padding: 0 0 173px 0
+    &_elem__img
+        height: 100%
+        background: url(../img/mustang19.png) center no-repeat
+        background-size: cover
+    &_back
+        overflow: hidden    
+    &_box
+        height: 100%
+        background: $color-praymay
+        position: relative
+    &_span
+        font-size: 24px
+        color: $color-faer
+    &_h2
+        color: $color-praymay
+        font-family: $Roboto
+        font-weight: 700
+        font-size: 36px
+        @media (max-width: $sm)
+            text-align: left
+            font-size: 32px
+    &_h3
+        color: $color-text
+        font-family: $Roboto
+        font-weight: 700
+        font-size: 36px
+        @media (max-width: $md)
+            font-size: 30px
+    &_p
+        margin-top: 53px
+        color: $color_minith
+        font-family: $Roboto
+        font-weight: 400
+        font-size: 24px
+        @media (max-width: $sm)
+            font-size: 22px
+    &_wraper__linck
+        margin-top: 24px
+    &_a
+        position: relative
+        color: #303030
+        font-family: $Roboto
+        font-weight: 400
+        font-size: 18px
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            right: 0
+            bottom: -5px
+            width: 100%
+            height: 2px
+            background: #2A2A2A
+            transition: transform 0.2s
+        &:hover::after
+            transform-origin: center
+            transform: scaleX(0)
+@media (max-width: $lg)
+    .advantage
+        padding: 60px 0 0 0
+        &_elem
+            padding: 0 0 30px 0
+            text-align: left
+            &__img
+                height: 100%
+                background: url(../img/mustang19.png) left no-repeat
+                background-size: cover
+        &_elem:nth-child(1)
+            grid-area: 1 / 2 / 2 / 9
+            position: relative
+            text-align: left
+            @media (max-width: $sm)
+                grid-area: 1 / 1 / 2 / 11
+            & .advantage_back
+                padding-right: 75px
+                position: absolute
+                top: 0
+                width: 1000px
+                height: 80px
+                left: -753px
+            & .advantage_trigel
+                position: absolute
+                background: inherit
+                height: 115px
+                width: 75px
+                top: 0
+                right: -75px
+                transform-origin: top right
+                transform: rotate(43deg)
+        &_elem:nth-child(2)
+            grid-area: 2 / 2 / 3 / 9
+            position: relative
+            text-align: left
+            @media (max-width: $sm)
+                grid-area: 2 / 1 / 3 / 11
+            & .advantage_back
+                padding: 0 75px 0 0
+                position: absolute
+                top: 0
+                width: 1000px
+                height: 80px
+                left: -753px
+            & .advantage_trigel
+                position: absolute
+                background: inherit
+                height: 115px
+                width: 75px
+                left: auto
+                right: -75px
+                transform-origin: top right
+                transform: rotate(43deg)
+        &_elem:nth-child(3)
+            grid-area: 3 / 2 / 4 / 9
+            position: relative
+            text-align: left
+            @media (max-width: $sm)
+                grid-area: 3 / 1 / 4 / 11
+            & .advantage_back
+                padding-right: 75px
+                position: absolute
+                top: 0
+                width: 1000px
+                height: 80px
+                left: -753px
+            & .advantage_trigel
+                position: absolute
+                background: inherit
+                height: 115px
+                width: 75px
+                top: 0
+                right: -75px
+                transform-origin: top right
+                transform: rotate(43deg)  
+        &_elem:nth-child(4)
+            grid-area: 4 / 2 / 5 / 9
+            position: relative
+            text-align: left
+            @media (max-width: $sm)
+                grid-area: 4 / 1 / 5 / 11
+            & .advantage_back
+                padding: 0 75px 0 0
+                position: absolute
+                top: 0
+                width: 1000px
+                height: 80px
+                left: -753px
+            & .advantage_trigel
+                position: absolute
+                background: inherit
+                height: 115px
+                width: 75px
+                top: 0
+                left: auto
+                right: -75px
+                transform-origin: top right
+                transform: rotate(43deg)   
+        &_elem:nth-child(5)
+            grid-area: 1 / 3 / 5 / 13
+            padding: 0
+            @media (max-width: $sm)
+                grid-area: 1 / 2 / 5 / 13 
