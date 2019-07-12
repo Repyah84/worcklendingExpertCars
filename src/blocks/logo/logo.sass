@@ -24,7 +24,8 @@
         align-items: center
         &-ferst
             position: relative
-            justify-content: center
+            @media (max-width: $lg)
+                justify-content: center
         &-second
             transition: 0.3s
             justify-content: space-between
@@ -122,3 +123,16 @@
             background: $color-faer
             transition: background 0.3s
             color: $color-text
+    &_a__burger
+        color: $color_nith
+        font-family: $Roboto
+        font-weight: 400
+        font-size: 20px
+        text-decoration: none
+        display: block
+        padding: 16px 25px
+        cursor: pointer
+        &:hover
+            background: $color-faer
+            transition: background 0.3s
+            color: $color-text       

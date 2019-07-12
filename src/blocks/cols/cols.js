@@ -1,3 +1,4 @@
+
 export default function(){
     let blend = document.querySelector('.cols_blender');
         blend.addEventListener('mouseover', enterMouskBlend);
@@ -10,9 +11,9 @@ export default function(){
     let winWid = (window.innerWidth <= 992) ? true : false;
     let Clic = true;
 
-    window.onresize = function(){
+    window.addEventListener('resize', function(){
         winWid = (window.innerWidth <= 992) ? true : false;
-    }
+    })
 
     function clickkBlend(){
         if(winWid && Clic){
@@ -58,5 +59,5 @@ export default function(){
             };
             wrapElems.style.transform = 'scaley(0)';
         }
-    }   
+    }
 };

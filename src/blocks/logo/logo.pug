@@ -16,9 +16,9 @@ mixin logo()
                 .logo_elem(class='logo_elem-second')
                     .logo_imeg
                     .logo_nav
-                        each i in ['Гллавнвя', 'О нас', 'Как мы работаем', 'Наши цены', 'Контакты']
-                            a.logo_a__nav(href="#")=i
+                        each i in logo
+                            a.logo_a__nav(name=i.href)=i.value
                     +burger()
                     .logo_burger__nav
-                        each i in ['Гллавнвя', 'О нас', 'Как мы работаем', 'Наши цены', 'Контакты']
-                            a.logo_a__nav(href="#")=i
+                        each i in logo
+                            a.logo_a__burger(name=i.href)=i.value

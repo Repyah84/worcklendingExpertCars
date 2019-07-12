@@ -5,7 +5,7 @@ export default function(){
 
     let burgNav = document.querySelector('.logo_burger__nav');
 
-    let burgNavLinck = document.querySelectorAll('.logo_burger__nav .logo_a__nav');
+    let burgNavLinck = document.querySelectorAll('.logo_a__burger');
     
     let Flag = true
 
