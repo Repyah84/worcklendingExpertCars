@@ -5,6 +5,7 @@ export default function(){
         blend.addEventListener('click', clickkBlend);
     let wrapElems = document.querySelector('.cols_elems');
     let colsElem = document.querySelectorAll('.cols_elem ');
+    let colsLinck = document.querySelectorAll('.cols_a');
 
     let winWid = (window.innerWidth <= 992) ? true : false;
     let Clic = true;
@@ -17,14 +18,18 @@ export default function(){
         if(winWid && Clic){
             for(let i=0; i<colsElem.length; i++){
                 colsElem[i].style.transform = 'scaley(1)';
-                colsElem[i].style.opacity = '1';
+            };
+            for(let i=0; i<colsLinck.length; i++){
+                colsLinck[i].style.opacity = '1';
             };
             wrapElems.style.transform = 'scaley(1)';
             Clic = !Clic 
         }else if(winWid && !Clic){
             for(let i=0; i<colsElem.length; i++){
                 colsElem[i].style.transform = 'scaley(0)';
-                colsElem[i].style.opacity = '0';
+            };
+            for(let i=0; i<colsLinck.length; i++){
+                colsLinck[i].style.opacity = '0';
             };
             wrapElems.style.transform = 'scaley(0)';
             Clic = !Clic
@@ -35,7 +40,9 @@ export default function(){
         if(!winWid){
             for(let i=0; i<colsElem.length; i++){
                 colsElem[i].style.transform = 'scaley(1)';
-                colsElem[i].style.opacity = '1';
+            };
+            for(let i=0; i<colsLinck.length; i++){
+                colsLinck[i].style.opacity = '1';
             };
             wrapElems.style.transform = 'scaley(1)';
         }
@@ -45,7 +52,9 @@ export default function(){
         if(!winWid){
             for(let i=0; i<colsElem.length; i++){
                 colsElem[i].style.transform = 'scaley(0)';
-                colsElem[i].style.opacity = '0';
+            };
+            for(let i=0; i<colsLinck.length; i++){
+                colsLinck[i].style.opacity = '0';
             };
             wrapElems.style.transform = 'scaley(0)';
         }

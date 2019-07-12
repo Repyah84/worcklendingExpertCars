@@ -29,13 +29,12 @@
         flex-direction: column
         align-items: center
         justify-content: space-between
-        transition: 0.2s
+        transition: 0.4s
         transform: scaley(0)
         transform-origin: center bottom
     &_elem
-        opacity: 0.1
         transform: scaley(0)
-        transition:  0.4s
+        transition:  0.8s
         &:nth-child(1) .cols_a
             border: 2px solid #f8d306
         &:nth-child(2) .cols_a
@@ -47,7 +46,9 @@
         padding: 4px
         width: 34px
         height: 34px
-        background: $color-sprait 
+        background: $color-sprait
+        opacity: 0
+        transition: opacity 0.2s
     &_imeg
         object-fit: cover
         width: 100%
