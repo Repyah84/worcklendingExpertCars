@@ -104,6 +104,8 @@
         font-family: $Roboto
         font-weight: 700
         font-size: 36px
+        @media (max-width: $lg)
+            font-size: 32px
         @media (max-width: $md)
             text-align: left
             font-size: 28px
@@ -160,11 +162,13 @@
         background: $color-praymay
 @media (max-width: $xl)
     .prices
-        &_questions__h2
-            text-align: left
         &_contact
             max-width: 467px
             grid-area: 1 / 1 / 2 / 13
+            @media (max-width: $lg)
+                grid-area: 1 / 2 / 2 / 12
+            @media (max-width: $md)
+                grid-area: 1 / 1 / 2 / 13      
         &_back  
             grid-area: 1 / 2 / 2 / 13
             background: url(../img/Ford-Mustang-PNG-Photo.png) right no-repeat
