@@ -13,10 +13,10 @@ export default function (){
         // ol[el].style.top = `0px`;
         // block[el].style.height = `${heightOl}px`;
 
-    window.onresize = function(){
+    window.addEventListener('resize', function(){
         let elHeight = ol[0].clientHeight;
         if(block[el].clientHeight !== 0) block[el].style.height = `${elHeight}px`;
-    }
+    })
 
     for(let i=0; i<tachBlock.length; i++){
         tachBlock[i].addEventListener('click', function(){
