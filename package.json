@@ -6,7 +6,7 @@
   "dependencies": {
     "@google/maps": "^0.5.5",
     "core-js": "^3.1.4",
-    "swiper": "^4.5.0",
+    "swiper": "^6.5.1",
     "youtube-player": "^5.5.2"
   },
   "devDependencies": {
